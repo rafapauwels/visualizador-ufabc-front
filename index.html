@@ -132,7 +132,8 @@
         var ra = document.getElementById("ra-input")[0].value
         await fetch("https://18.228.30.182/alunos/" + ra)
           .then(data => data.json().then(json => {
-            localStorage.setItem('aulas', JSON.stringify(json))
+            console.log(JSON.stringify(json))
+            localStorage.setItem('aulasData', JSON.stringify(json))
             //document.location.pathname='/grade.html'
           }))
       }

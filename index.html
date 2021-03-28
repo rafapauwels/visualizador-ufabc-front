@@ -55,11 +55,11 @@
           
 	          <!--busca-->
 	          <form class="col-12 ">
-	            <input type="search" class="form-control" placeholder="Digite seu RA">
+	            <input id="ra-input" type="search" class="form-control" placeholder="Digite seu RA">
 	          </form><br>
 
 	          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-	            <button type="button" class="btn btn-indigo btn-lg px-4 me-md-2">Pesquisar</button>
+	            <button id="pesquisar" type="button" class="btn btn-indigo btn-lg px-4 me-md-2">Pesquisar</button>
 	            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Login</button>
 	          </div>
 	      </div>
@@ -127,5 +127,19 @@
 
     <!--scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   
+    <script>
+      const ra = document.getElementById("ra-input").value
+      fetch("https://18.228.30.182/alunos/" + ra)
+        .then(function(response) {
+          const data = response.json().then((res) => res)
+          if (data != "") {
+            localStorage.setItem('aulasData', data)
+            document.location.pathname='/grade.html'
+          }
+        })
+        .catch(function(error) {
+          console.log("Erro no fetch")
+        })
+    </script>
   </body>
 </html>

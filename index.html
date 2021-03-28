@@ -59,7 +59,7 @@
 	          </form><br>
 
 	          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-	            <button id="pesquisar" onclick="busca()" type="button" class="btn btn-indigo btn-lg px-4 me-md-2">Pesquisar</button>
+	            <button id="pesquisar" onclick="{async () => {await this.busca()}}" type="button" class="btn btn-indigo btn-lg px-4 me-md-2">Pesquisar</button>
 	            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Login</button>
 	          </div>
 	      </div>

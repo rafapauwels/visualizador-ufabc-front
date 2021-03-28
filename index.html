@@ -54,8 +54,8 @@
 		      <p class="lead">Tenha todos os horários da sua grade na palma da sua mão. Faça uma pesquisa com o seu RA e tenha tudo que você precisa para começar o seu quadrimestre.</p>
           
 	          <!--busca-->
-	          <form class="col-12 ">
-	            <input id="ra-input" type="search" class="form-control" placeholder="Digite seu RA">
+	          <form class="col-12 " id="ra-input">
+	            <input type="search" class="form-control" placeholder="Digite seu RA">
 	          </form><br>
 
 	          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
@@ -138,7 +138,7 @@
               document.location.pathname='/grade.html'
             }
           })
-          .catch(function(error) {
+          .catch(function(error) {promise.then(function(res) {res.json()})
             console.log("Erro no fetch")
           })
       }

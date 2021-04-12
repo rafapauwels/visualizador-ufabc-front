@@ -143,6 +143,13 @@ h3.class-name, .class-teacher, h3.class-student-name {
 	width: 50%;
 }
 
+.ra-invalido {
+	width: 100%;
+	margin-top: .25rem;
+	font-size: .875em;
+	color: #dc3545;
+}
+
 /*footer*/
 .margin-fix {
 	padding-top: 1em;

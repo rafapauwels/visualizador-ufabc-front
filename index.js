@@ -7,7 +7,7 @@ document.addEventListener('keydown', (event) => {
 
 async function busca() {
     var ra = document.getElementById("ra-input").value
-    await fetch("https://18.228.138.74/alunos/" + ra)
+    await fetch("https://visualizador.memori.cc/alunos/" + ra)
         .then(data => data.json().then(json => {
             console.log(JSON.stringify(json))
             if (json.turmas.length != 0) {

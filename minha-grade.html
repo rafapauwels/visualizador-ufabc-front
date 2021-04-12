@@ -1,144 +1,165 @@
 <!doctype html>
 <html lang="pt-BR" class="h-100">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles/ufabcaulas-style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Minhas Grades | UFABC Aulas</title>
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/ufabcaulas-style.css">
 
-  <body class="d-flex flex-column h-100">
-    <!--main menu-->
-    <header class="p-3 bg-indigo text-white">
-      <div class="container">
-        <div class="row align-items-center justify-content-center justify-content-lg-start">
-          <div class="col-6">
-            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-              <img class="menu-logo" src="images/menu/p-calendar.png">
-            </a>
-          </div>
-          <div class="col-6 menu-dropdown">
-            <div class="dropdown text-end">
-              <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-person-circle"></i>
-              </a>
-              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
-                <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
-                <li><a class="dropdown-item" href="minha-grade.html">Minha Grade</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sair</a></li>
-              </ul>
-            </div>            
-          </div>
-        </div>
-      </div>
-    </header>
+  <title>Minhas Grades | UFABC Aulas</title>
+</head>
 
-    <!--calendar heading-->
-    <div class="container py-5">
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6">
-          <h1 class="text-indigo text-center text-md-start"><i class="bi bi-calendar-week"></i> Meu Cronograma</h1>
-        </div>
-        <div class="col-12 col-md-6">
-          <h3 class="class-student-name text-secondary text-center text-md-end">RA do Aluno</h3>
-        </div>
-      </div>
-    </div>
-
-    <!--calendar-->
-    <div class="container mb-4">
-      <div class="row g-3">
-
-        <!--class 01-->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="p-3 class-block force-bottom">
-            <div class="class-icon"><i class="bi bi-journal-bookmark text-indigo"></i></div>
-            <div class="class-header">
-              <h3 class="class-name text-indigo fs-5">Algoritmos e Estruturas de Dados I</h3>
-              <div class="class-teacher text-gray fs-6"><i class="bi bi-person"></i> JESUS PASCUAL MENA CHALCO</div>
-            </div>
-            <ul class="list-group">
-              <li class="list-group-item"><span class="badge bg-indigo">SEG</span> <span class="badge bg-secondary">19h00 - 21h00</span></li>
-            </ul> 
-            <div class="class-body bottom-item">
-              <div class="container-fix">
-                <div class="col-12"><span class="rounded-text bg-gray text-dark">Sala 107</span> <span class="rounded-text bg-gray text-dark">Santo André</span></div>  
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--class 02-->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="p-3 class-block force-bottom">
-            <div class="class-icon"><i class="bi bi-journal-bookmark text-indigo"></i></div>
-            <div class="class-header">
-              <h3 class="class-name text-indigo fs-5">Pensamento Hegeliano e seus Desdobramentos Contemporâneo</h3>
-              <div class="class-teacher text-gray fs-6"><i class="bi bi-person"></i> JESUS PASCUAL MENA CHALCO</div>
-            </div>
-            <ul class="list-group">
-              <li class="list-group-item"><span class="badge bg-indigo">QUI</span> <span class="badge bg-secondary">19h00 - 21h00</span></li>
-              <li class="list-group-item"><span class="badge bg-indigo">SEG</span> <span class="badge bg-secondary">19h00 - 21h00</span></li>
-            </ul>  
-            <div class="class-body bottom-item">
-              <div class="container-fix">
-                <div class="col-12"><span class="rounded-text bg-gray text-dark">Sala 107</span> <span class="rounded-text bg-gray text-dark">Santo André</span></div>  
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--class 03-->
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="p-3 class-block force-bottom">
-            <div class="class-icon"><i class="bi bi-journal-bookmark text-indigo"></i></div>
-            <div class="class-header">
-              <h3 class="class-name text-indigo fs-5">Biodiversidade: Interações entre organismos e ambiente </h3>
-              <div class="class-teacher text-gray fs-6"><i class="bi bi-person"></i> HENGAMEH RAEISIDEHKORDI</div>
-            </div>
-            <ul class="list-group">
-              <li class="list-group-item"><span class="badge bg-indigo">QUA</span> <span class="badge bg-secondary">19h00 - 21h00</span> <span class="badge bg-indigo">SI</span></li>
-              <li class="list-group-item"><span class="badge bg-indigo">QUA</span> <span class="badge bg-secondary">21h00 - 23h00</span> <span class="badge bg-indigo">SII</span></li>
-              <li class="list-group-item"><span class="badge bg-indigo">SEX</span> <span class="badge bg-secondary">19h00 - 21h00</span></li>
-            </ul>          
-            <div class="class-body bottom-item">
-              <div class="container-fix">
-                <div class="col-12"><span class="rounded-text bg-gray text-dark">Sala 107</span> <span class="rounded-text bg-gray text-dark">Santo André</span></div>  
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-      </div> 
-    </div>  
-
-    <!--buttons-->
+<body class="d-flex flex-column h-100">
+  <!--main menu-->
+  <header class="p-3 bg-indigo text-white">
     <div class="container">
-      <div class="rol">
-        <div class="d-grid gap-2 d-md-flex justify-content-sm-center">
-          <button type="button" class="btn btn-indigo btn-lg px-4 me-md-2" onclick="window.location.href=">Salvar</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="window.location.href='index.html'">Nova Consulta</button>
+      <div class="row align-items-center justify-content-center justify-content-lg-start">
+        <div class="col-6">
+          <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img class="menu-logo" src="images/menu/p-calendar.png">
+          </a>
+        </div>
+        <div class="col-6 menu-dropdown">
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-circle"></i>
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" style="">
+              <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="minha-grade.html">Minha Grade</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  </header>
 
-    <!--footer-->
-    <div class="container margin-fix"><p class="text-center"><i class="bi bi-calendar-check text-indigo"></i></p></div>
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container">
-        <span class="text-muted">Copyright UFABC - Todos os Direitos Reservados.</span>
+  <!--calendar heading-->
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <h1 class="text-indigo text-center text-md-start"><i class="bi bi-calendar-week"></i> Meu Cronograma</h1>
       </div>
-    </footer>
+      <div class="col-12 col-md-6">
+        <h3 class="class-student-name text-secondary text-center text-md-end">RA do Aluno</h3>
+      </div>
+    </div>
+  </div>
 
-    <!--scripts-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   
-  </body>
+  <!--calendar-->
+  <div class="container mb-4">
+    <div id="calendario" class="row g-3">
+
+      <!--class 01-->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="p-3 class-block force-bottom">
+          <div class="class-icon"><i class="bi bi-journal-bookmark text-indigo"></i></div>
+          <div class="class-header">
+            <h3 class="class-name text-indigo fs-5">Algoritmos e Estruturas de Dados I</h3>
+            <div class="class-teacher text-gray fs-6"><i class="bi bi-person"></i> JESUS PASCUAL MENA CHALCO</div>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span class="badge bg-indigo">SEG</span> <span class="badge bg-secondary">19h00
+                - 21h00</span></li>
+          </ul>
+          <div class="class-body bottom-item">
+            <div class="container-fix">
+              <div class="col-12"><span class="rounded-text bg-gray text-dark">Sala 107</span> <span
+                  class="rounded-text bg-gray text-dark">Santo André</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--class 02-->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="p-3 class-block force-bottom">
+          <div class="class-icon"><i class="bi bi-journal-bookmark text-indigo"></i></div>
+          <div class="class-header">
+            <h3 class="class-name text-indigo fs-5">Pensamento Hegeliano e seus Desdobramentos Contemporâneo</h3>
+            <div class="class-teacher text-gray fs-6"><i class="bi bi-person"></i> JESUS PASCUAL MENA CHALCO</div>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span class="badge bg-indigo">QUI</span> <span class="badge bg-secondary">19h00
+                - 21h00</span></li>
+            <li class="list-group-item"><span class="badge bg-indigo">SEG</span> <span class="badge bg-secondary">19h00
+                - 21h00</span></li>
+          </ul>
+          <div class="class-body bottom-item">
+            <div class="container-fix">
+              <div class="col-12"><span class="rounded-text bg-gray text-dark">Sala 107</span> <span
+                  class="rounded-text bg-gray text-dark">Santo André</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--class 03-->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="p-3 class-block force-bottom">
+          <div class="class-icon"><i class="bi bi-journal-bookmark text-indigo"></i></div>
+          <div class="class-header">
+            <h3 class="class-name text-indigo fs-5">Biodiversidade: Interações entre organismos e ambiente </h3>
+            <div class="class-teacher text-gray fs-6"><i class="bi bi-person"></i> HENGAMEH RAEISIDEHKORDI</div>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item"><span class="badge bg-indigo">QUA</span> <span class="badge bg-secondary">19h00
+                - 21h00</span> <span class="badge bg-indigo">SI</span></li>
+            <li class="list-group-item"><span class="badge bg-indigo">QUA</span> <span class="badge bg-secondary">21h00
+                - 23h00</span> <span class="badge bg-indigo">SII</span></li>
+            <li class="list-group-item"><span class="badge bg-indigo">SEX</span> <span class="badge bg-secondary">19h00
+                - 21h00</span></li>
+          </ul>
+          <div class="class-body bottom-item">
+            <div class="container-fix">
+              <div class="col-12"><span class="rounded-text bg-gray text-dark">Sala 107</span> <span
+                  class="rounded-text bg-gray text-dark">Santo André</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <!--buttons-->
+  <div class="container">
+    <div class="rol">
+      <div class="d-grid gap-2 d-md-flex justify-content-sm-center">
+        <button type="button" class="btn btn-indigo btn-lg px-4 me-md-2" onclick="window.location.href=">Salvar</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+          onclick="window.location.href='index.html'">Nova Consulta</button>
+      </div>
+    </div>
+  </div>
+
+  <!--footer-->
+  <div class="container margin-fix">
+    <p class="text-center"><i class="bi bi-calendar-check text-indigo"></i></p>
+  </div>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Copyright UFABC - Todos os Direitos Reservados.</span>
+    </div>
+  </footer>
+
+  <!--scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="./grade.js"></script>
+</body>
+
 </html>
